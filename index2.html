@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClicCompre - Móveis para Escritório</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #004080;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      font-size: 1.2rem;
+    }
+    header nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    header nav a {
+      color: #fff;
+      margin: 5px 10px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('office.jpg') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+      margin-top: 60px; /* compensar header fixo */
+    }
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .hero button {
+      background: #00a859;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #004080;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      background: #f9f9f9;
+    }
+    footer {
+      background: #004080;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      header nav {
+        flex-direction: column;
+        width: 100%;
+      }
+      header nav a {
+        margin: 8px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        height: 60vh;
+        padding: 10px;
+      }
+      .hero h1 {
+        font-size: 1.2rem;
+      }
+      .hero button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+      section {
+        padding: 40px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ClicCompre</h1>
+    <nav>
+      <a href="#sobre">Sobre Nós</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#assistencia">Assistência</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Soluções em mobiliário de escritório com qualidade e eficiência</h1>
+    <button>Conheça nossos produtos</button>
+  </div>
+
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Oferecemos soluções em mobiliário de escritório com qualidade e eficiência, proporcionando conforto e funcionalidade para nossos clientes.</p>
+    <div class="grid">
+      <div class="card">Compromisso</div>
+      <div class="card">Qualidade</div>
+      <div class="card">Satisfação do Cliente</div>
+      <div class="card">Seriedade e Confiança</div>
+      <div class="card">Excelência em Atendimento</div>
+      <div class="card">Soluções sob Medida</div>
+    </div>
+  </section>
+
+  <section id="produtos">
+    <h2>Nossos Produtos</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Cadeiras</h3>
+        <p>Ergonomia e Conforto</p>
+      </div>
+      <div class="card">
+        <h3>Mesas e Estações</h3>
+        <p>Funcionalidade e Design</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="assistencia">
+    <h2>Assistência e Manutenção</h2>
+    <ul>
+      <li>Reparo de Cadeiras</li>
+      <li>Ajustes e Trocas de Peças</li>
+      <li>Manutenção Preventiva</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Entre em Contato</h2>
+    <p>📞 Telefone: <a href="tel:41995668895">(41) 99566-8895</a></p>
+    <p>📧 E-mail: <a href="mailto:vendas@cliccompre.gmail.com">vendas@cliccompre.gmail.com</a></p>
+    <p>🌐 Site: <a href="http://www.cliccompre.com.br">www.cliccompre.com.br</a></p>
+    <p>Redes sociais: Facebook | Instagram | WhatsApp</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 ClicCompre - Móveis para Escritório</p>
+  </footer>
+</body>
+</html>
